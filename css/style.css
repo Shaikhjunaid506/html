@@ -1,0 +1,44 @@
+h2{
+    display:inline-block;
+    width:200px;
+    height:200px;
+    background-color:aqua;
+
+}
+span{
+    
+    display:inline-block;
+    width:200px;
+    height:200px;
+    background-color:rgb(255, 68, 0);
+}
+div{
+    display:inline-block;
+    width: 150px;
+    height: 150px;
+    border: 2px solid black;
+    margin: 2px;
+}
+#relative #middle{
+position:relative;
+top:50px;
+left:125px;
+
+}
+#relative #left{
+    position: relative;
+    top: 100px;
+    left: 180px;
+}
+#absolute #middle{
+    position:absolute;
+    top:50px;
+}
+#fixed #middle{
+    position: fixed;
+    top:50px;
+}
+#sticky  #middle{
+    position:sticky;
+    height: 100px;
+}

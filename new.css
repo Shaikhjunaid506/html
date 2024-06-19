@@ -1,0 +1,24 @@
+section div p{
+    color:cadetblue
+}
+section div h4{
+    color:aqua
+}
+.div h5{
+    color:brown
+}
+.div p{
+    color:chartreuse
+}
+div>p{
+    color:crimson
+}
+section a:hover{
+    color:rgb(0, 0, 0);
+    border: 4px  lightblue;
+}
+section button:active{
+    color:darkslateblue;
+    background-color:aqua;
+    border: 5px rebeccapurple;
+}
