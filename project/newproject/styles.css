@@ -1,0 +1,121 @@
+body {
+    background: url('https://wallpapers.com/images/hd/movie-theater-background-2048-x-1536-lgd7o3rggvl8j8yr.jpg') center center fixed;
+    background-size: cover;
+    color: #333;
+
+    color: #FFFFFF;
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 20px;
+}
+
+h1 {
+    text-align: center;
+    font-size: 2.5rem;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    margin-bottom: 20px;
+    color: #b0b0b0;
+    animation: fadeIn 1.5s ease-in-out;
+}
+
+#search-bar {
+    display: block;
+    width: 80%;
+    margin: 0 auto;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #7a7a7a;
+    background-color: #1E1E1E;
+    opacity:0.4 ;
+    color: #FFF;
+    font-size: 16px;
+    animation: fadeIn 1.5s ease-in-out;
+}
+
+#movies-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 20px;
+    animation: fadeIn 2s ease-in-out;
+}
+
+.movie {
+    background-color: #1E1E1E;
+    border: 1px solid #333;
+    border-radius: 5px;
+    margin: 10px;
+    padding: 10px;
+    width: 200px;
+    text-align: center;
+    cursor: pointer;
+    transition: transform 0.3s, box-shadow 0.3s;
+    animation: slideUp 0.5s ease-in-out;
+}
+
+.movie img {
+    width: 100%;
+    border-radius: 5px;
+}
+
+.movie:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.movie h3, .movie p {
+    margin: 10px 0;
+}
+
+#movie-details {
+    background-color: #1E1E1E;
+    border: 1px solid #333;
+    border-radius: 5px;
+    margin: 20px auto;
+    padding: 20px;
+    width: 80%;
+    animation: fadeIn 1s ease-in-out;
+}
+
+#movie-details img {
+    width: 100%;
+    border-radius: 5px;
+}
+
+#close-details {
+    display: block;
+    width: 100px;
+    margin: 20px auto 0;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #333;
+    background-color: #656666;
+    color: #FFF;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#close-details:hover {
+    background-color: #101010;
+}
+
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes slideUp {
+    from {
+        transform: translateY(20px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
